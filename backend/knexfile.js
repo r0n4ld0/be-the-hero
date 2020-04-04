@@ -14,6 +14,18 @@ module.exports = {
     }
   },
 
+  test: {
+    client: "mysql",
+    connection: {
+      host: "localhost",
+      user: "OmniStack",
+      password: "AbC_123456789",
+      database: "OmniStackTest"
+    },
+    migrations: {
+      directory: "./src/database/migrations"
+    }
+  },
   staging: {
     client: "postgresql",
     connection: {
